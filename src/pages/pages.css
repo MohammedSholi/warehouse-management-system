@@ -1,0 +1,143 @@
+/* Start => Dashboard Page Styles */
+.dashboard-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.statistics {
+  display: flex;
+  gap: 20px;
+}
+.statistic_item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.recent-activity_log {
+  margin-top: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.recent-activity_log h2 {
+  margin-bottom: 15px;
+}
+
+.recent-activity_log table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.recent-activity_log td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* left corners */
+.recent-activity_log tr td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* right corners */
+.recent-activity_log tr td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* remove double borders in middle */
+.recent-activity_log td + td {
+  border-left: 0;
+}
+
+.quick-action {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.quick-action .action-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.quick-action h2 {
+  margin-bottom: 15px;
+}
+
+.quick-action button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.shipment-status {
+  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.shipment-status .status-bar {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.shipment-status .status-bar p {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.shipment-status .status-bar .pending {
+  background-color: #f0ad4e;
+}
+
+.shipment-status .status-bar .in-transit {
+  background-color: #5bc0de;
+}
+
+.shipment-status .status-bar .delivered {
+  background-color: #5cb85c;
+}
+
+.shipment-status .status-bar .delayed {
+  background-color: #d9534f;
+}
+
+.warnings {
+  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+/* End => Dashboard Page Styles */
