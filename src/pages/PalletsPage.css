@@ -1,0 +1,165 @@
+/* Main container */
+.pallets-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+/* Header */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  width: 100%;
+}
+
+/* Table styles */
+.pallets-table {
+  flex: 2;
+  overflow-x: auto;
+}
+
+.pallets-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pallets-table th, .pallets-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.pallets-table th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+  color: #333;
+}
+
+.pallets-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Action buttons inside table */
+.pallets-table button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.pallets-table .edit-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pallets-table .delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.pallets-table .edit-button:hover {
+  background-color: #45a049;
+}
+
+.pallets-table .delete-button:hover {
+  background-color: #e53935;
+}
+
+/* Filters section */
+.filters {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+}
+
+.filters h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.filters button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.filters button:hover {
+  background-color: #45a049;
+}
+
+/* Status Summary */
+.status-summary {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+.status-summary h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.status-summary p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Responsive for small screens */
+@media (max-width: 900px) {
+  .pallets-container {
+    flex-direction: column;
+  }
+
+  .filters, .status-summary {
+    min-width: 100%;
+  }
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
